@@ -9,8 +9,8 @@ export function App() {
   return (
     <div>
 
-      <h1 className='font-black text-5xl text-purple-400'>Hello World</h1>
-      <button className='bg-green-500 font-medium px-4 py-2 rounded text-black hover:bg-red-500'>Botão paia</button>
+      <h1 className='font-black text-2xl text-gray-400'>Hello World</h1>
+      <button className='bg-cyan font-medium px-4 py-2 rounded text-black hover:bg-cyan-hover'>Botão paia</button>
     </div>
 
   )
