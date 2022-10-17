@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     colors: {
+      
+      'black': '000',
+      'white': 'FFF',
       'gray-900': '#121214',
       'gray-800': '#202024',
       'gray-400': '#7C7C8A',
@@ -12,6 +15,7 @@ module.exports = {
       'gray-200': '#C4C4CC',
       'cyan': '#61DAFB',
       'cyan-hover': '#A0EBFF',
+      'cyan-focus': '#C7F3FF'
       
       
     },

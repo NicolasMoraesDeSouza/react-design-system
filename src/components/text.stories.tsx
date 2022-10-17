@@ -21,25 +21,48 @@ export default {
     }
 
 } as Meta<TextProps>
-export const Default: StoryObj = {
+export const Default: StoryObj<TextProps> = {
     args: {
         size: 'md'
+    },
+    argTypes: {
+
+        asChild: {
+            table: {
+                disable: true
+            }
+        }
     }
 }
-export const Small: StoryObj = {
+export const Small: StoryObj<TextProps> = {
     args: {
         size: 'sm'
+    },
+    argTypes: {
+
+        asChild: {
+            table: {
+                disable: true
+            }
+        }
     }
 }
-export const Large: StoryObj = {
+export const Large: StoryObj<TextProps> = {
     args: {
         size: 'lg'
+    },
+    argTypes: {
+
+        asChild: {
+            table: {
+                disable: true
+            }
+        }
     }
 }
-export const CustomComp: StoryObj = {
+export const CustomComp: StoryObj<TextProps> = {
     args: {
-        size: 'lg',
-        asChield: true,
+        asChild: true,
         children: (
             <p>Test with {'<p>'} tag</p>
         )

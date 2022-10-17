@@ -21,25 +21,48 @@ export default {
     }
 
 } as Meta<HeadingProps>
-export const Default: StoryObj = {
+export const Default: StoryObj<HeadingProps> = {
     args: {
         size: 'md'
+    },
+    argTypes: {
+
+        asChild: {
+            table: {
+                disable: true
+            }
+        }
     }
 }
-export const Small: StoryObj = {
+export const Small: StoryObj<HeadingProps> = {
     args: {
         size: 'sm'
+    },
+    argTypes: {
+
+        asChild: {
+            table: {
+                disable: true
+            }
+        }
     }
 }
-export const Large: StoryObj = {
+export const Large: StoryObj<HeadingProps> = {
     args: {
         size: 'lg'
+    },
+    argTypes: {
+
+        asChild: {
+            table: {
+                disable: true
+            }
+        }
     }
 }
-export const CustomComp: StoryObj = {
+export const CustomComp: StoryObj<HeadingProps> = {
     args: {
-        size: 'lg',
-        asChield: true,
+        asChild: true,
         children: (
             <h1>Heading with {'h1'}</h1>
         )
