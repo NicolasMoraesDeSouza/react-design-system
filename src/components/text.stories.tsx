@@ -23,7 +23,8 @@ export default {
 } as Meta<TextProps>
 export const Default: StoryObj<TextProps> = {
     args: {
-        size: 'md'
+        size: 'md',
+        textColor: 'gray'
     },
     argTypes: {
 
