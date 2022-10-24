@@ -16,6 +16,10 @@ module.exports = {
     "storyStoreV7": true
   },
   vitefinal: (config, {configType}) => {
+    config.optimization = {
+      minimize: false,
+      minimizer: [],
+    };
     if (configType === 'PRODUCTION'){
         config.base= '/react-design-system'
 
