@@ -21,7 +21,7 @@ jobs:
 
       - run: npm ci --legacy-peer-deps 
 
-      - run: npm run build-storybook NODE_OPTIONS=--max_old_space_size=4096 build-storybook
+      - run: npm run NODE_OPTIONS=--max_old_space_size=4096 build-storybook 
         
       - name: Deploy storybook
         working-directory: ./packages/docs
